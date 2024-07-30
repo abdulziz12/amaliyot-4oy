@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katta Matnni Rangi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .big-text {
+            font-size: 24px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-text" id="bigText">
+        Bu katta matn. Orqa fon va yozuv ranglarini o'zgartirish uchun prompt orqali ranglarni kiriting.
+    </div>
+
+    <script>
+        // Body orqa fon rangini o'rnatish
+        var bodyBgColor = prompt("Orqa fon rangi (masalan, #f0f0f0 yoki red):", "#f0f0f0");
+        document.body.style.backgroundColor = bodyBgColor;
+
+        // Matn yozuv rangini o'rnatish
+        var textColor = prompt("Yozuv rangi (masalan, #ff0000 yoki blue):", "#000000");
+        document.getElementById("bigText").style.color = textColor;
+    </script>
+</body>
+</html>
